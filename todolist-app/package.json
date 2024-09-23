@@ -1,0 +1,29 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/MinhNguyen1919/trainning-anh-pha.git"
+  },
+  "keywords": [
+    "#todolist",
+    "#todo",
+    "#nodejs"
+  ],
+  "author": "ap",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/MinhNguyen1919/trainning-anh-pha/issues"
+  },
+  "homepage": "https://gitlab.com/MinhNguyen1919/trainning-anh-pha#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.20.0",
+    "pg": "^8.12.0"
+  }
+}

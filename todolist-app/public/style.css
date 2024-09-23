@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #3a8fb6;
+}
+h1 {
+    text-align: center;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: bold;
+}
+.todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"] {
+    width: 83%;
+    padding: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+input[type="text"]::placeholder{
+    font-style: italic;
+    font-weight: bold;
+}
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0f9ff;
+    border-bottom: 1px solid #e9e9e9;
+}
+li:first-child{
+    border-top: 1px solid #e0e0e0;
+}
+.task-title {
+    color: #58a3c7;
+    flex: 1;
+    margin-left: 8px;
+}
+input[type="checkbox" i]{
+    margin-left: 20px;
+}
+.completed .task-title {
+    text-decoration: line-through;
+}
+.task-title input {
+    width: 100%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 5px;
+}
+.hidden {
+    visibility: hidden;
+}
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.progress-bar {
+    position: relative;
+    width: 50%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+}
+#progressText{
+    margin-top: 2%;;
+}
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+.progress-placeholder {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    z-index: 1;
+}
+button i {
+    color: #E4E4E4;
+}
+
+button:hover i {
+    color: #58a3c7; 
+}
+button#removeCheckedBtn{
+    color: #fff ;
+    background-color: #58a3c7;
+}
+.edit-input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    color: #58a3c7;
+    text-align: justify;
+    font-size: inherit;
+    font-family: inherit;
+    box-sizing: border-box;
+}

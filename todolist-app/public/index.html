@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1 style="color: #001a65;">TODOLIST</h1>
+                
+        <input type="text" id="taskInput" placeholder="what needs to be done?" />
+        <button id="addTaskBtn" style="background-color: #58a3c7; border: none; color: #fff; font-size: 15px; width: 45px;">+</button>
+
+
+        <ul id="taskList"></ul>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+                <span id="progressText" class="progress-placeholder">0 of 0 tasks done</span>
+            </div>
+            <button id="removeCheckedBtn" class="hidden" onclick="removeChecked()">Remove Checked  <i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
